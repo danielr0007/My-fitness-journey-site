@@ -1,0 +1,630 @@
+:root{
+    --main-font-family: 'Padauk', sans-serif;
+    --logo-font-family: 'Allison', cursive;
+}
+
+
+
+
+/* base styles */
+
+*{
+    margin:0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+    line-height: 1.3;
+
+}
+
+p{
+    line-height: 1.4;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    /* background: url(http://www.downloadclipart.net/medium/58798-pink-butterfly-images.png) center top/20px; */
+    background-repeat: repeat;
+    background-color: rgba(148, 148, 148, 0.262);
+}
+
+
+/* utilities */
+
+.width-container{
+    margin: auto;
+    max-width: 1150px;
+}
+
+
+
+
+
+
+
+
+
+/* nav bar */
+
+#navbar{
+    background-color: pink;
+    position: sticky;
+    top: 0;
+
+}
+
+#navcontainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr ;
+    align-items: center;
+
+}
+
+
+
+.logo h3{
+    font-family: 'Allison', cursive ;
+    font-size: clamp(1rem, 0.8rem + 3.5vh, 5rem);
+    display: inline;
+    padding: 0 15px 0 15px;
+    color: white;
+    text-shadow: 1px 0 5px rgb(111, 111, 111);
+    letter-spacing: 2px;
+
+}
+
+.logo i{
+    color: red;
+    transform: rotate(6deg);
+
+}
+
+.resources{
+    text-align: center;
+
+}
+
+.resources i{
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+a [class]{
+    color: white;
+}
+
+#navbar ul{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+
+}
+
+#navbar ul li{
+    padding: 15px 0;
+    margin: 0 5px;
+    text-align: center;
+    transition: all 0.5s;
+    border-radius: 50px;
+
+}
+
+#navbar ul li a{
+    font-family: 'Padauk', sans-serif ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#navbar ul li:hover{
+    background-color: red;
+}
+
+
+
+/* banner */
+
+#banner{
+    min-height: 70vh;
+    background: linear-gradient(rgba(33, 33, 33, 0.7),rgba(33, 33, 33, 0.7)), url(images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0px -300px;
+
+
+}
+
+
+#banner-container{
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+
+#banner-text{
+    color: white;
+    
+
+}
+
+#banner-text h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.2rem, 0.8rem + 2vw, 2.2rem);
+    padding: 5px 0 20px;
+    text-transform: capitalize;
+
+}
+
+#banner-text p{
+    font-family: var(--main-font-family);
+    font-size: clamp(0.8rem, 0.5rem + 1vw, 1.1rem);
+    padding: 0 0 30px;
+
+
+}
+
+#banner-text a{
+    display: inline-block;
+    padding: 20px 35px;
+    font-size: 17px;
+    background-color: pink;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 1px 0 20px 0
+    
+
+}
+
+
+.decobutton{
+    display: inline-block;
+    padding: 6px 17px;
+    background-color: white;
+    border-radius: 50px;
+    color: red;
+    font-size: 16px;
+    margin: 0 0 10px 0
+
+}
+
+
+
+
+
+/* main content */
+
+main{
+    margin: 50px 0;
+
+}
+
+h1{
+    font-family: var(--logo-font-family);
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding: 0 0 0 15px;
+}
+
+#articles-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px
+}
+
+.sect-primary{
+    background-color: white;
+    padding: 13px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+}
+
+.two{
+    margin: 10px 0 0 15px;
+    display: inline-block;
+    padding: 8px 13px;
+    background-color: pink;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+}
+
+#image1{
+    max-width: 400px;
+    margin: 10px 5px 0 0;
+}
+
+.workout-description h3{
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    padding: 7px 5px;
+    
+}
+
+.workout-description p{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    padding: 10px 5px;
+
+
+}
+
+.sect-secondary{
+    background-color: #333;
+    padding: 15px;
+
+}
+
+
+
+
+/* footer */
+
+
+footer{
+    background-color: #333;
+
+}
+
+#footer-container{
+    padding: 40px 30px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+
+}
+
+
+#footer-logo h3{
+    font-size: clamp(0.7rem, 0.4rem + 2vw, 2.1rem);
+
+}
+
+
+#footer-logo p{
+    margin-top: 30px;
+    color: white;
+
+
+}
+
+#elipic{
+    justify-self: end;
+    width: 200px;
+
+}
+
+#elipic img{
+    border-radius: 45%;
+}
+
+footer ul{
+    justify-self: center;
+
+}
+
+footer ul li{
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: dotted lightgray;
+
+
+}
+
+footer ul li a{
+    color: white;
+    font-size: 20px;
+
+}
+
+#startbutton{
+    text-align: center;
+}
+
+
+#startbutton h3{
+    font-size: 25px;
+    color: white;
+    padding: 15px 0;
+    margin: 0 0 10px;
+
+
+
+
+}
+
+#startbutton a{
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 16px;
+    background-color: pink;
+    border-radius: 50px;
+    font-weight: bold;
+
+
+}
+
+#copywright{
+    margin: 20px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    grid-column: 1/ span 4;
+    background-color: rgb(84, 84, 84);
+
+}
+
+
+
+/* media queries mobile */
+
+@media screen and (max-width: 900px) {
+
+    /* nav bar */
+
+
+    .width-container{
+        margin: auto;
+        max-width: 100%
+        }
+    
+    
+    #navcontainer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+    
+    }
+    
+    
+    
+    .resources{
+        padding: 20px 0 12px;
+       
+    
+    }
+    
+    .resources i{
+        font-size: 30px;
+    }
+    
+    a [class]{
+        color: grey;
+    }
+    
+    #navbar ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto;
+        margin-top: 5px;;
+    
+    }
+    
+    #navbar ul li a{
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    
+
+
+/* banner */
+
+#banner{
+    background-position: 0px 0px;
+}
+
+
+
+
+#banner-container{
+    grid-template-columns: auto;
+    padding: 80px 25px;
+
+
+}
+
+#banner-text h2{
+    font-size: 25px;
+    line-height: 1.6;
+    padding: 10px 0 20px;
+
+}
+
+#banner-text p{
+    font-size: 18px;
+    hyphens: auto;
+
+
+}
+
+#banner-text a{
+    padding: 15px 30px;
+    
+
+}
+
+
+.decobutton{
+    padding: 9px 12px;
+    font-size: 16px;
+
+}
+
+
+/* main content */
+
+main{
+    margin: 80px 0;
+    
+
+}
+
+h1{
+    text-align: left;
+    margin: 0 0 30px;
+   
+}
+
+#articles-container{
+    display: block;
+    margin: 0 10px;
+    
+}
+
+
+.sect-primary{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    hyphens: auto;
+}
+
+.two{
+    margin: 20px 0 12px;
+    font-size: 16px;
+    background-color: grey;
+}
+
+#image1{
+    margin: auto;
+    margin-top: 30px;
+}
+
+#image1 img{
+    border-radius: 50%;
+    width: 250px;
+}
+
+.workout-description h3{
+    font-size: 35px;
+    padding: 5px 5px;
+    margin: 10px 0;
+    
+}
+
+.workout-description p{
+    font-size: 19px;
+    padding: 15px 20px;
+    margin: 15px 0 18px;
+
+
+}
+
+.sect-secondary{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    
+
+}
+
+.sect-secondary iframe{
+    margin: auto;
+    width: 350px;
+}
+
+
+
+/* footer */
+
+
+
+#footer-container{
+    padding: 40px 30px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    text-align: center;
+
+}
+
+
+
+#footer-logo h3{
+    font-size: 35px;
+
+}
+
+
+#footer-logo p{
+    margin-top: 30px;
+    color: white;
+
+
+}
+
+#elipic{
+    justify-self: center;
+    width: 200px;
+    grid-row-start: 1;
+
+}
+
+#elipic img{
+    border-radius: 50%;
+}
+
+footer ul{
+    justify-self: center;
+
+}
+
+footer ul li{
+    padding: 10px 10vw;
+
+
+}
+
+#startbutton{
+    text-align: center;
+}
+
+
+#startbutton h3{
+    font-size: 25px;
+    color: white;
+    padding: 15px 0;
+    margin: 0 0 10px;
+
+
+
+
+}
+
+#startbutton a{
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 17px;
+    margin: 20px 0;
+
+
+}
+
+#copywright{
+    margin: 5px 0 10px;
+    grid-column: 1/ span 1;
+
+}
+
+
+
+
+
+
+
+}
